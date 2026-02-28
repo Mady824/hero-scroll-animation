@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll-Driven Hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="hero-stage" id="top">
+      <div class="hero-pin">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-track">
+          <article class="hero-slide is-active" data-tone="tech">
+            <img src="./hero-ironman.jpg" alt="Iron Man hero art" />
+            <div class="slide-gradient"></div>
+          </article>
+          <article class="hero-slide" data-tone="agile">
+            <img src="./hero-spiderman.jpg" alt="Spider-Man hero art" />
+            <div class="slide-gradient"></div>
+          </article>
+          <article class="hero-slide" data-tone="legend">
+            <img src="./hero-thor.jpg" alt="Thor hero art" />
+            <div class="slide-gradient"></div>
+          </article>
+          <article class="hero-slide" data-tone="valor">
+            <img src="./hero-captain.jpg" alt="Captain America hero art" />
+            <div class="slide-gradient"></div>
+          </article>
+          <article class="hero-slide" data-tone="rage">
+            <img src="./hero-hulk.jpg" alt="Hulk hero art" />
+            <div class="slide-gradient"></div>
+          </article>
+          <article class="hero-slide" data-tone="stealth">
+            <img src="./hero-blackwidow.jpg" alt="Black Widow hero art" />
+            <div class="slide-gradient"></div>
+          </article>
+          <article class="hero-slide" data-tone="royal">
+            <img src="./hero-blackpanther.jpg" alt="Black Panther hero art" />
+            <div class="slide-gradient"></div>
+          </article>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow reveal">SCROLL DRIVEN EXPERIENCE</p>
+          <h1 class="headline" aria-label="SUPER HEROES">
+            <span class="headline-char">S</span><span class="headline-char">U</span><span class="headline-char">P</span
+            ><span class="headline-char">E</span><span class="headline-char">R</span>
+            <span class="headline-char">&nbsp;</span>
+            <span class="headline-char">H</span><span class="headline-char">E</span><span class="headline-char">R</span
+            ><span class="headline-char">O</span><span class="headline-char">E</span><span class="headline-char">S</span>
+          </h1>
+
+          <p class="hero-name reveal">IRON MAN</p>
+          <p class="hero-detail reveal" id="hero-detail">Genius inventor in an adaptive armor suit built for precision combat.</p>
+          <div class="hero-tags reveal" id="hero-tags">
+            <span class="hero-tag">Arc Reactor</span>
+            <span class="hero-tag">Flight</span>
+            <span class="hero-tag">AI Targeting</span>
+          </div>
+          <p class="subtext reveal" id="hero-context">
+            Avengers roster briefing: each profile highlights the hero's role, combat style, and mission value.
+          </p>
+
+          <div class="metrics">
+            <article class="metric-card">
+              <h3 id="power-stat">95%</h3>
+              <p>Power Index</p>
+            </article>
+            <article class="metric-card">
+              <h3 id="mode-stat">TECH</h3>
+              <p>Signature Mode</p>
+            </article>
+            <article class="metric-card">
+              <h3 id="rank-stat">01</h3>
+              <p>Hero Rank</p>
+            </article>
+          </div>
+
+          <div class="progress-ui">
+            <div class="progress-line"><span class="progress-fill"></span></div>
+            <p class="progress-label">Scroll to switch heroes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
